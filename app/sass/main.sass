@@ -42,4 +42,171 @@ body
 	max-width: 100%
 	height: auto
 
+.container
+	position: relative
+	
+.header
+	background: url(../img/pexels-photo.jpg) no-repeat center center
+	width: 100%
+	height: 100vh
+	background-size: cover
+	position: relative
+
+.bg_block
+	background: #000
+	width: 100%
+	height: 100vh
+	opacity: .5
+	z-index: -1
+
+.top_menu
+	width: 100%
+	height: 80px
+	background: #000
+	position: absolute
+	top: 40px
+	opacity: .6
+	z-index: 2
+	.phone
+		color: #FFFFFF
+		font-size: 18px
+		line-height: 1.4
+		margin-top: 13px
+		letter-spacing: 2px
+	.nav
+		display: inline-block
+		float: right
+		margin-top: 35px
+		li
+			display: inline-block
+			text-transform: uppercase
+			padding-right: 40px
+			a
+				color: #fff
+				letter-spacing: 2px
+				text-decoration: none
+				&:hover
+					color: #525252
+
+
+.top_menu_next
+	width: 100%
+	height: 50px
+	background: #ffffff
+	position: fixed
+	top: 0
+	opacity: .7
+	z-index: 2
+	box-shadow: 2px 3px 10px #7f7f7f
+	display: none
+	.nav
+		display: inline-block
+		float: right
+		margin-top: 15px
+		li
+			display: inline-block
+			text-transform: uppercase
+			padding-right: 60px
+			z-index: 3
+			a
+				color: #3e3e3e
+				letter-spacing: 2px
+				text-decoration: none
+				&:hover
+					color: #9f9f9f
+.logo_name
+	position: absolute
+	z-index: 1
+	.logo
+		color: #fff
+		text-decoration: none
+		&:hover
+			color: #fff
+			text-decoration: none
+		h1
+			text-align: center
+			margin-top: 400px
+			font-family: $ralewayLight
+			letter-spacing: 3px
+			text-shadow: 3px 5px 5px #000
+		p
+			text-align: center
+			font-family: $ralewayLight
+			font-size: 20px
+			letter-spacing: 3px
+			text-transform: uppercase
+			text-shadow: 3px 5px 5px #000
+
+.left_line
+	width: 100px
+	height: 2px
+	background: #FFFFFF
+	display: inline-block
+	left: 370px
+	margin-top: 15px
+	position: absolute
+	box-shadow: 3px 3px 5px #000
+
+.right_line
+	width: 100px
+	height: 2px
+	background: #FFFFFF
+	display: inline-block
+	position: absolute
+	right: 375px
+	margin-top: -39px
+	box-shadow: 3px 3px 5px #000
+
+.section
+	width: 100%
+	height: 700px
+
+.about
+	background: url(../img/smartphone-925758_1920.jpg) no-repeat center center
+	background-size: cover
+	position: relative
+	p
+		font-family: $raleway
+		font-size: 18px
+		display: inline-block
+		width: 475px
+		position: absolute
+		right: 0
+		margin-top: 280px
+		
+.skills
+	background: url(../img/computer-1869236_1920.jpg) no-repeat right
+	background-size: 50vw 700px
+	position: relative
+
+.tech_block
+	border: 3px solid #FFFFFF
+	width: 400px
+	margin-top: 80px
+	color: #FFFFFF
+	font-family: $ralewayLight
+	margin: 0 auto
+	margin-top: 30%
+	h3
+		text-transform: uppercase
+		font-size: 36px
+		text-align: center
+		padding-top: 30px
+	p
+		padding: 5px 25px
+		font-size: 18px
+
+.portfolio
+	background: #525252
+
+.contacts
+	background: url(../img/iconpack1/my_foto_left.png) no-repeat left
+
+
+.footer
+	background: #525252
+	width: 100%
+	height: 120px
+
+
 @import "media" // Всегда в конце
