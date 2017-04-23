@@ -46,120 +46,113 @@ body
 	position: relative
 	
 .header
-	background: url(../img/pexels-photo.jpg) no-repeat center center
+	background: url(../img/pexels-photo.jpg) 50% 0 no-repeat fixed
 	width: 100%
-	height: 100vh
+	height: 700px
 	background-size: cover
 	position: relative
+	margin: 0 auto;
 
 .bg_block
-	background: #000
+	background: #001724
 	width: 100%
-	height: 100vh
+	height: 700px
 	opacity: .5
 	z-index: -1
 
-.top_menu
-	width: 100%
-	height: 80px
-	background: #000
-	position: absolute
-	top: 40px
-	opacity: .6
-	z-index: 2
-	.phone
-		color: #FFFFFF
-		font-size: 18px
-		line-height: 1.4
-		margin-top: 13px
-		letter-spacing: 2px
-	.nav
-		display: inline-block
-		float: right
-		margin-top: 35px
-		li
-			display: inline-block
-			text-transform: uppercase
-			padding-right: 40px
-			a
-				color: #fff
-				letter-spacing: 2px
-				text-decoration: none
-				&:hover
-					color: #525252
-
-
-.top_menu_next
-	width: 100%
-	height: 50px
-	background: #ffffff
+#menu
+	display: inline-block
 	position: fixed
-	top: 0
-	opacity: .7
-	z-index: 2
-	box-shadow: 2px 3px 10px #7f7f7f
-	display: none
-	.nav
+	top: 20px
+	left: -20px
+	li
+		list-style-type: none
+		font-size: 18px
 		display: inline-block
-		float: right
-		margin-top: 15px
-		li
-			display: inline-block
-			text-transform: uppercase
-			padding-right: 60px
-			z-index: 3
-			a
-				color: #3e3e3e
-				letter-spacing: 2px
-				text-decoration: none
-				&:hover
-					color: #9f9f9f
+		border: 1px solid #e02e00
+		padding: 5px 13px
+		margin-bottom: 20px
+		margin-right: 10px
+		box-shadow: 3px 5px 5px #3e3e3e
+		&:hover
+			transform: rotate(360deg)
+			transition: 2s
+		a
+			color: #e02e00
+			text-decoration: none
+			text-shadow: 3px 5px 5px #000
+			display: block
+.tip1
+	display: inline-block
+	border: 1px solid #e02e00
+	padding: 5px 10px
+	margin-bottom: 20px
+	top: -50px
+	left: 130px
+	color: #e02e00
+	text-shadow: 3px 5px 5px #3e3e3e
+	position: fixed
+.tip2
+	display: inline-block
+	border: 1px solid #e02e00
+	padding: 5px 10px
+	margin-bottom: 20px
+	top: -50px
+	left: 130px
+	color: #e02e00
+	text-shadow: 3px 5px 5px #3e3e3e
+	position: fixed
+
+.phone
+	width: 200px
+	color: #FFFFFF
+	position: absolute
+	right: 0
+	top: 40px
+	z-index: 1
+	line-height: 1.45
+	font-size: 18px
+	span
+		text-shadow: 3px 5px 5px #3e3e3e
+
 .logo_name
 	position: absolute
 	z-index: 1
+	right: 0
 	.logo
 		color: #fff
 		text-decoration: none
+		text-align: left
+		display: inline-block
+		position: absolute
+		right: 0
+		margin-top: 320px
 		&:hover
 			color: #fff
 			text-decoration: none
 		h1
-			text-align: center
-			margin-top: 400px
-			font-family: $ralewayLight
+			text-align: left
+			font-family: $ralewayBold
+			font-size: 54px
 			letter-spacing: 3px
 			text-shadow: 3px 5px 5px #000
-		p
-			text-align: center
-			font-family: $ralewayLight
-			font-size: 20px
-			letter-spacing: 3px
 			text-transform: uppercase
-			text-shadow: 3px 5px 5px #000
-
-.left_line
-	width: 100px
-	height: 2px
-	background: #FFFFFF
-	display: inline-block
-	left: 370px
-	margin-top: 15px
-	position: absolute
-	box-shadow: 3px 3px 5px #000
-
-.right_line
-	width: 100px
-	height: 2px
-	background: #FFFFFF
-	display: inline-block
-	position: absolute
-	right: 375px
-	margin-top: -39px
-	box-shadow: 3px 3px 5px #000
+			line-height: 1
+			.big-orange
+				color: #e02e00
+		.devel
+			margin-top: -40px
+			p
+				text-align: right
+				font-family: $ralewayLight
+				font-size: 20px
+				letter-spacing: 3px
+				text-transform: uppercase
+				text-shadow: 3px 5px 5px #000
 
 .section
 	width: 100%
-	height: 700px
+	height: 693px
 
 .about
 	background: url(../img/smartphone-925758_1920.jpg) no-repeat center center
@@ -171,40 +164,85 @@ body
 		display: inline-block
 		width: 475px
 		position: absolute
-		right: 0
+		top: 65px
+		right: 175px
 		margin-top: 280px
+		padding: 50px 50px
+		box-shadow: 8px 7px 25px #000
+		z-index: 3
+		background: #FFFFFF
 		
 .skills
-	background: url(../img/computer-1869236_1920.jpg) no-repeat right
-	background-size: 50vw 700px
 	position: relative
+	.square
+		width: 680px
+		height: 693px
+		background: url(../img/shutterstock_120539965.jpg) 50% 0 no-repeat fixed
+		//background-size: cover
+		position: absolute
+		left: 0
 
 .tech_block
 	border: 3px solid #FFFFFF
+	box-shadow: 6px 8px 10px #000
 	width: 400px
-	margin-top: 80px
 	color: #FFFFFF
 	font-family: $ralewayLight
 	margin: 0 auto
 	margin-top: 30%
+	position: absolute
+	top: 30px
+	left: 20px
 	h3
 		text-transform: uppercase
 		font-size: 36px
 		text-align: center
 		padding-top: 30px
+		text-shadow: 3px 3px 3px #000
 	p
 		padding: 5px 25px
 		font-size: 18px
+		text-shadow: 5px 5px 3px #000
+
+.skill_line
+	margin-top: 250px
+	font-family: $ralewayBold
+	li
+		list-style-type: none
+		margin-bottom: 50px
+		position: relative
+		span
+			color: #3e3e3e
+			font-size: 24px
+			display: inline-block
+		.percent
+			position: absolute
+			right: 0
+			font-size: 18px
+		.html, .css, .js, .jq
+			border: 2px solid #3e3e3e
+			width: 300px
+			height: 20px
+			display: inline-block
+			position: absolute
+			right: 70px
+			top: 10px
+
 
 .portfolio
-	background: #525252
+	background: #001724
+	.orange
+		height: 400px
+		background: #e02e00
+		margin-left: 300px
+		margin-top: 100px
 
 .contacts
 	background: url(../img/iconpack1/my_foto_left.png) no-repeat left
 
 
 .footer
-	background: #525252
+	background: #001724
 	width: 100%
 	height: 120px
 
