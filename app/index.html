@@ -12,19 +12,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<!-- Chrome, Firefox OS and Opera -->
+			<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#000">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+
 
 </head>
 
@@ -78,19 +76,31 @@
 					<ul>
 						<li>
 							<span>HTML</span>
-							<div class="html"></div><span class="percent">85%</span>
+							<div class="html">
+								<div class="html_line wow"></div>
+							</div>
+							<span class="percent">85%</span>
 						</li>
 						<li>
 							<span>CSS</span>
-							<div class="css"></div><span class="percent">80%</span>
+							<div class="css">
+								<div class="css_line wow"></div>
+							</div
+								><span class="percent">80%</span>
 						</li>
 						<li>
 							<span>JavaScript</span>
-							<div class="js"></div><span class="percent">60%</span>
+							<div class="js">
+								<div class="js_line wow"></div>
+							</div>
+							<span class="percent">60%</span>
 						</li>
 						<li>
 							<span>JQuery</span>
-							<div class="jq"></div><span class="percent">75%</span>
+							<div class="jq">
+								<div class="jq_line wow"></div>
+							</div>
+							<span class="percent">75%</span>
 						</li>
 					</ul>
 				</div>
@@ -99,23 +109,55 @@
 	</div>
 </section>
 
-<section class="section portfolio">
+<section class="section portfolio" id="porfolio">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 orange">
-
+			<h2 class="section_head white">Портфолио</h2>
+			<div class="slick">
+				<div class="item">your content1</div>
+				<div class="item">your content2</div>
+				<div class="item">your content3</div>
+				<div class="item">your content4</div>
+				<div class="item">your content5</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="section contacts"></section>
+<section class="section contacts" id="contacts">
+	<div class="glitch-img wow"></div>
+	<div class="container">
+		<div class="row">
+			<h2 class="section_head dark">заказать сайт</h2>
+			<div class="col-md-6 pull-right">
+				<div class="contacts_phone">
+					<a href="https://www.facebook.com/26emic73" class="social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href="https://github.com/emialex40" class="social"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="skype:emialex40?chat" class="social"><i class="fa fa-skype" aria-hidden="true"></i></a>
+					<a href="mailto:26emic73@gmail.com" class="social"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<span>+38(063) 471 56 45</span>
+					<span>+38(096) 808 80 98</span>
+
+				</div>
+				<div class="order_form">
+					<form action="">
+						<input type="text" placeholder="Ваше имя"/>
+						<input type="tel" placeholder="Ваш телефон"/>
+						<input type="email" placeholder="Ваш E-mail"/>
+						<textarea name="message" id="message" placeholder="Ваше сообщение"></textarea>
+						<input type="submit" value="Заказать"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <footer class="footer"></footer>
 <div id="menu">
 	<ul>
-		<li class="first-tip"><a href="#" >П</a></li>
-		<li class="second-tip"><a href="#" >К</a></li>
+		<li class="first-tip"><a href="#porfolio" >П</a></li>
+		<li class="second-tip"><a href="#contacts" >К</a></li>
 	</ul>
 </div>
 
@@ -123,8 +165,16 @@
 	<div class="tip2">Контакты</div>
 
 
-	<link rel="stylesheet" href="css/main.min.css">
+
 	<script src="js/scripts.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="libs/wow/wow.min.js"></script>
+	<script type="text/javascript" src="libs/mgGlitch/src/mgGlitch.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
 
 </body>
 </html>
