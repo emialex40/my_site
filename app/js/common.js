@@ -1,9 +1,35 @@
 $(function() {
 
+
+
+	//var img = $('.hov_img').width();
+	//	$('.hov_img').on('click', function() {
+	//
+	//			$('.data').css('width', '100%');
+	//			$('.hov_img').css({
+	//				'width': '100%',
+	//				'cursor': 'zoom-out'
+	//			});
+	//
+	//	});
+
+
+	$('img').hover(function(){
+		$('.img_hover').css('display', 'block');
+
+	},
+	function() {
+		$('.img_hover').css('display', 'none')
+	});
+
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+			});
+
 	$('.slick').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2000,
 		arrows: true,
 		nextArrow: '<span class="prev"></span>',

@@ -52,7 +52,7 @@ body
 	height: 700px
 	background-size: cover
 	position: relative
-	margin: 0 auto;
+	margin: 0 auto
 
 .bg_block
 	background: #001724
@@ -308,25 +308,82 @@ body
 		.prev
 			width: 50px
 			height: 50px
-			background: #001724
-			border-radius: 50%
+			background: url(../img/iconpack1/arrow_left.png) no-repeat 15px 13px
 			position: absolute
-			left: 10px
-			top: 40%
+			left: -60px
+			top: 45%
+			cursor: pointer
 		.next
 			width: 50px
 			height: 50px
-			background: #001724
-			border-radius: 50%
+			background: url(../img/iconpack1/arrow_right.png) no-repeat 19px 13px
 			position: absolute
-			right: 10px
-			top: 40%
+			right: -60px
+			top: 45%
 			z-index: 1
+			cursor: pointer
 		.item
 			width: 400px
 			height: 350px
-			background: #ffffff
-			border: 1px solid #001724
+			background: #001724
+			.title
+				display: block
+				width: 385px
+				background: #e02e00
+				position: absolute
+				opacity: .7
+				bottom: 30px
+				font-family: $raleway
+				font-size: 18px
+				color: #ffffff
+				letter-spacing: 3px
+				line-height: 1.1
+				padding: 5px 15px
+			a
+				text-decoration: none
+				width: 385px
+				height: 340px
+				display: block
+				img
+					width: 385px
+					height: 340px
+					padding-left: 0
+					padding-top: 0
+					display: inline-block
+					position: relative
+
+.data
+	width: 75%
+	position: relative
+	a
+		text-decoration: none
+		padding-bottom: 20px
+		display: block
+		text-align: center
+		border: none
+		outline: none
+		text-transform: uppercase
+	img
+		width: 100%
+		display: block
+		margin: 0 auto
+	span
+		display: block
+		background: #000000
+		padding: 10px
+		opacity: .6
+		color: #ffffff
+		width: 100%
+		font-family: $raleway
+		font-size: 14px
+		margin: 0 auto
+		margin-bottom: 30px
+
+
+
+
+
+
 .section_head
 	text-align: center
 	font-family: $ralewayLight
@@ -394,6 +451,12 @@ body
 	background: #001724
 	width: 100%
 	height: 120px
+	p
+		font-family: $raleway
+		font-size: 14px
+		color: #ffffff
+		text-align: center
+		padding-top: 40px
 
 
 @import "media" // Всегда в конце

@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
-
+	<link rel="stylesheet" href="libs/fancybox-3.0/dist/jquery.fancybox.min.css">
 
 </head>
 
@@ -45,7 +45,7 @@
 				</div>
 				</div>
 			</div>
-	</div>
+
 	<div class="bg_block"></div>
 
 
@@ -63,7 +63,7 @@
 
 <section class="section skills">
 	<div class="square"  data-speed="6" data-type="background"></div>
-	<div class="container
+	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="tech_block">
@@ -114,11 +114,76 @@
 		<div class="row">
 			<h2 class="section_head white">Портфолио</h2>
 			<div class="slick">
-				<div class="item">your content1</div>
-				<div class="item">your content2</div>
-				<div class="item">your content3</div>
-				<div class="item">your content4</div>
-				<div class="item">your content5</div>
+
+				<div class="item">
+					<a id="inline" href="#data">
+						<img src="img/mini_shot.png" alt="Партнер"/>
+						<div class="title">Сайт агенства недвижимости "Партнер"</div>
+						<div style="display:none">
+							<div id="data" class="data">
+								<a href="https://www.partner.rv.ua/" target="_blank">Сайт агенства недвижимости "Партнер"</a>
+								<span>Создание дизайна сайта, порезка PSD макета и подготовка к верстке, адаптивная верстка сайта, создание темы для CMS Wordpress, установка и настройка CMS Wordpress на хостинге заказчика.</span>
+								<img class="hov_img" src="img/mini.s-shot.ru.jpg" alt="" onclick="changeSizeImage(this)">
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="item">
+					<a id="inline" href="#data">
+						<img src="img/mini_shot.png" alt="Партнер"/>
+						<div class="title">Сайт агенства недвижимости "Партнер"</div>
+						<div style="display:none">
+							<div id="data" class="data">
+								<a href="https://www.partner.rv.ua/" target="_blank">Сайт агенства недвижимости "Партнер"</a>
+								<span>Создание дизайна сайта, порезка PSD макета и подготовка к верстке, адаптивная верстка сайта, создание темы для CMS Wordpress, установка и настройка CMS Wordpress на хостинге заказчика.</span>
+								<img class="hov_img" src="img/mini.s-shot.ru.jpg" alt="" onclick="changeSizeImage(this)">
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="item">
+					<a id="inline" href="#data">
+						<img src="img/mini_shot.png" alt="Партнер"/>
+						<div class="title">Сайт агенства недвижимости "Партнер"</div>
+						<div style="display:none">
+							<div id="data" class="data">
+								<a href="https://www.partner.rv.ua/" target="_blank">Сайт агенства недвижимости "Партнер"</a>
+								<span>Создание дизайна сайта, порезка PSD макета и подготовка к верстке, адаптивная верстка сайта, создание темы для CMS Wordpress, установка и настройка CMS Wordpress на хостинге заказчика.</span>
+								<img class="hov_img" src="img/mini.s-shot.ru.jpg" alt="" onclick="changeSizeImage(this)">
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="item">
+					<a id="inline" href="#data">
+						<img src="img/mini_shot.png" alt="Партнер"/>
+						<div class="title">Сайт агенства недвижимости "Партнер"</div>
+						<div style="display:none">
+							<div id="data" class="data">
+								<a href="https://www.partner.rv.ua/" target="_blank">Сайт агенства недвижимости "Партнер"</a>
+								<span>Создание дизайна сайта, порезка PSD макета и подготовка к верстке, адаптивная верстка сайта, создание темы для CMS Wordpress, установка и настройка CMS Wordpress на хостинге заказчика.</span>
+								<img class="hov_img" src="img/mini.s-shot.ru.jpg" alt="" onclick="changeSizeImage(this)">
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="item">
+					<a id="inline" href="#data">
+						<img src="img/mini_shot.png" alt="Партнер"/>
+						<div class="title">Сайт агенства недвижимости "Партнер"</div>
+						<div style="display:none">
+							<div id="data" class="data">
+								<a href="https://www.partner.rv.ua/" target="_blank">Сайт агенства недвижимости "Партнер"</a>
+								<span>Создание дизайна сайта, порезка PSD макета и подготовка к верстке, адаптивная верстка сайта, создание темы для CMS Wordpress, установка и настройка CMS Wordpress на хостинге заказчика.</span>
+								<img class="hov_img" src="img/mini.s-shot.ru.jpg" alt="" onclick="changeSizeImage(this)">
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -153,7 +218,11 @@
 	</div>
 </section>
 
-<footer class="footer"></footer>
+<footer class="footer">
+	<div class="container">
+		<p>&copy;&nbsp;Alex Yemelyantsev 2016-2017&nbsp;&nbsp;&nbsp;All rights reserved</p>
+	</div>
+</footer>
 <div id="menu">
 	<ul>
 		<li class="first-tip"><a href="#porfolio" >П</a></li>
@@ -167,10 +236,11 @@
 
 
 	<script src="js/scripts.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 	<script type="text/javascript" src="libs/wow/wow.min.js"></script>
 	<script type="text/javascript" src="libs/mgGlitch/src/mgGlitch.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
 <script>
 	new WOW().init();
 </script>
