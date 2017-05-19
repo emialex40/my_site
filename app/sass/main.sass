@@ -35,6 +35,7 @@ body
 	position: relative
 	line-height: 1.75
 	font-family: $default-font
+	font-size: 100%
 	overflow-x: hidden
 	opacity: 1
 
@@ -113,7 +114,7 @@ body
 	top: 40px
 	z-index: 10
 	line-height: 1.45
-	font-size: 18px
+	font-size: 1.8em
 	span
 		text-shadow: 3px 5px 5px #3e3e3e
 
@@ -141,7 +142,7 @@ body
 		h1
 			text-align: left
 			font-family: $ralewayBold
-			font-size: 54px
+			font-size: 5.2em
 			letter-spacing: 3px
 			text-shadow: 3px 5px 5px #000
 			text-transform: uppercase
@@ -153,7 +154,7 @@ body
 			p
 				text-align: right
 				font-family: $ralewayLight
-				font-size: 20px
+				font-size: 2em
 				letter-spacing: 3px
 				text-transform: uppercase
 				text-shadow: 3px 5px 5px #000
@@ -175,7 +176,7 @@ body
 	position: relative
 	p
 		font-family: $raleway
-		font-size: 18px
+		font-size: 1.8em
 		display: inline-block
 		width: 475px
 		position: absolute
@@ -188,76 +189,67 @@ body
 		background: #FFFFFF
 		
 .skills
-	position: relative
-	.square
-		width: 48%
-		height: 693px
-		background: url(../img/shutterstock_120539965.jpg) 50% 0 no-repeat fixed
-		background-size: cover
-		position: absolute
-		left: 0
-
+	background: url(../img/shutterstock_120539965.jpg) no-repeat fixed
+	background-size: 50% 100%
 .tech_block
 	border: 3px solid #FFFFFF
 	box-shadow: 6px 8px 10px #000
 	width: 400px
 	color: #FFFFFF
 	font-family: $ralewayLight
-	margin: 0 auto
+	margin: 0
 	margin-top: 30%
-	position: absolute
-	top: 30px
-	left: 20px
+	margin-left: 60px
 	h3
 		text-transform: uppercase
-		font-size: 36px
+		font-size: 3.5em
 		text-align: center
 		padding-top: 30px
 		text-shadow: 3px 3px 3px #000
 	p
 		padding: 5px 25px
-		font-size: 18px
+		font-size: 1.8em
 		text-shadow: 5px 5px 3px #000
 
 +keyframes(html)
 	0%
 		width: 0
 	100%
-		width: 265px
+		width: 85%
 
 +keyframes(css)
 	0%
 		width: 0
 	100%
-		width: 245px
+		width: 80%
 
 +keyframes(js)
 	0%
 		width: 0
 	100%
-		width: 160px
+		width: 60%
 
 +keyframes(jq)
 	0%
 		width: 0
 	100%
-		width: 200px
+		width: 75%
 
 .skill_line
-	margin-top: 250px
 	font-family: $ralewayBold
+	margin-top: 35%
 	li
 		list-style-type: none
 		margin-bottom: 50px
 		position: relative
 		span
 			color: #001724
-			font-size: 24px
+			font-size: 2em
 			display: inline-block
 		.percent
 			position: absolute
 			right: 0
-			font-size: 18px
+			font-size: 1.8em
 		.html, .css, .js, .jq
 			border: 2px solid #001724
 			width: 300px
@@ -267,7 +259,7 @@ body
 			right: 70px
 			top: 10px
 			.html_line
-				width: 265px
+				width: 85%
 				height: 16px
 				background: #e02e00
 				animation-name: html
@@ -275,7 +267,7 @@ body
 				animation-timing-function: ease-out
 				animation-fill-mode: forwards
 			.css_line
-				width: 245px
+				width: 80%
 				height: 16px
 				background: #e02e00
 				animation-name: css
@@ -283,7 +275,7 @@ body
 				animation-timing-function: ease-out
 				animation-fill-mode: forwards
 			.js_line
-				width: 170px
+				width: 60%
 				height: 16px
 				background: #e02e00
 				animation-name: js
@@ -291,7 +283,7 @@ body
 				animation-timing-function: ease-out
 				animation-fill-mode: forwards
 			.jq_line
-				width: 200px
+				width: 75%
 				height: 16px
 				background: #e02e00
 				animation-name: jq
@@ -379,11 +371,6 @@ body
 		margin: 0 auto
 		margin-bottom: 30px
 
-
-
-
-
-
 .section_head
 	text-align: center
 	font-family: $ralewayLight
@@ -413,6 +400,7 @@ body
 
 
 .contacts
+	font-size: 1.5em
 	h2
 		text-transform: uppercase
 		color: #001724
@@ -433,7 +421,7 @@ body
 			background: #001724
 			border: none
 			font-family: $ralewayLight
-			font-size: 20px
+			font-size: 1.7em
 			color: #FFFFFF
 			text-transform: uppercase
 			letter-spacing: 3px
@@ -453,10 +441,16 @@ body
 	height: 120px
 	p
 		font-family: $raleway
-		font-size: 14px
+		font-size: 1.8em
 		color: #ffffff
 		text-align: center
 		padding-top: 40px
 
+.blue
+	background: #03b7c0
 
+.green
+	background: #64ff4b
+
+//media queries
 @import "media" // Всегда в конце

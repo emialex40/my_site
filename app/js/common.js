@@ -1,19 +1,6 @@
 $(function() {
 
 
-
-	//var img = $('.hov_img').width();
-	//	$('.hov_img').on('click', function() {
-	//
-	//			$('.data').css('width', '100%');
-	//			$('.hov_img').css({
-	//				'width': '100%',
-	//				'cursor': 'zoom-out'
-	//			});
-	//
-	//	});
-
-
 	$('img').hover(function(){
 		$('.img_hover').css('display', 'block');
 
@@ -29,7 +16,7 @@ $(function() {
 	$('.slick').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 2000,
 		arrows: true,
 		nextArrow: '<span class="prev"></span>',
@@ -40,14 +27,14 @@ $(function() {
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
-					infinite: true,
-					dots: true
+					infinite: false,
+					dots: false
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			},
@@ -62,10 +49,6 @@ $(function() {
 			// settings: "unslick"
 			// instead of a settings object
 		]
-	});
-
-	$( ".glitch-img" ).mgGlitch({
-				zIndexStart : 0
 	});
 
 
@@ -91,7 +74,7 @@ $(function() {
 	// Кешируем объект окна
 	$window = $(window);
 
-	$('.header[data-type="background"], .square[data-type="background"]').each(function(){
+	$('.header[data-type="background"]').each(function(){
 		var $bgobj = $(this); // Назначаем объект
 
 		$(window).scroll(function() {
